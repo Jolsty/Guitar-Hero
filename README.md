@@ -1,1 +1,2 @@
-ciulpan_andrei_872394_arch1lab
+Project for Computer Architecture I
+.circ file opens with Logisim
