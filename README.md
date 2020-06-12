@@ -5,7 +5,7 @@ author:
  
 title: |
   Relazione del progetto di Architetture I\
-  Guitar Hero in Logisim[^1]
+  Guitar Hero in Logisim
 ---
 
 Introduzione
@@ -306,4 +306,3 @@ Miglioramenti possibili:
 -   possibilità di selezionare la difficoltà con un circuito che aumenta
     la probabilità di generare i \"tiles\".
 
-[^1]: Progetto approvato il 20/08/2018 e consegnato il 23/08/2018
