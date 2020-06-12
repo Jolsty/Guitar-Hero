@@ -291,7 +291,7 @@ Conclusioni
 ===========
 
 Per realizzare il circuito sono partito dall'implementazione della board
-di gioco con il shift registe e la matrice LED, che inizalmente era 8x2.
+di gioco con il shift register e la matrice LED, che inizalmente era 8x2.
 Poi ho rifatto la stessa cosa su una scala piu' grande (matrice LED 8x8)
 e infine ho aggiunto lo score e la matrice per visualizzare i messaggi a
 fine partita.\
