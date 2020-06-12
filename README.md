@@ -2,8 +2,7 @@
 author:
 - |
   Andrei Ciulpan\
-  Matricola: 872394 - Turno: A\
-  [andrei.ciulpan\@studenti.unimi.it](andrei.ciulpan@studenti.unimi.it)
+ 
 title: |
   Relazione del progetto di Architetture I\
   Guitar Hero in Logisim[^1]
@@ -12,7 +11,7 @@ title: |
 Introduzione
 ============
 
-![User interface completa](immagini/main.png){#fig:fig1 width="130%"}
+![User interface completa](immagini/main.png)
 
 Il progetto consiste nel simulare il gioco \"Guitar Hero\" in cui un
 giocatore ha il compito di premere dei bottoni nel momento opportuno per
@@ -26,8 +25,7 @@ lo compongono.
 Board di Gioco
 ==============
 
-![Board di gioco](immagini/board_di_gioco_completa.png){#fig:fig2
-width="100%"}
+![Board di gioco](immagini/board_di_gioco_completa.png)
 
 La board di gioco è rappresentata da:
 
@@ -52,7 +50,7 @@ Matrice LED 8x8 e l'effetto dei \"tiles\" cadenti
 -------------------------------------------------
 
 ![Gestione della schermata di
-gioco](immagini/gestione_tile.png){#fig:fig3 width="80%"}
+gioco](immagini/gestione_tile.png)
 
 La matrice LED 8x8 è pilotata da un shift register a 8 stadi (una per
 ogni riga della matrice). Il shift register riceve in ingresso un numero
@@ -71,12 +69,10 @@ del componente \"Tile\".
 ### Circuito che raddoppia i \"tiles\"
 
 ![Il componente che raddoppia i
-\"tiles\"](immagini/componente_tile_doubler.png){#fig:subfig8
-width="0.95\\linewidth" height="5cm"}
+\"tiles\"](immagini/componente_tile_doubler.png)
 
 ![Circuito che conta i
-punti](immagini/circuito_tile_doubler.png){#fig:subfig10
-width="1.1\\linewidth" height="5cm"}
+punti](immagini/circuito_tile_doubler.png)
 
 Questo componente riceve all'ingresso un numero su 4 bit e da in uscita
 un numero su 8 bit dopo aver raggruppato due bit adiacenti alla volta in
@@ -103,7 +99,7 @@ spenti).
 ### Circuito per la generazione casuale dei \"tiles\"
 
 ![Circuito per la generazione casuale dei
-\"tiles\"](immagini/circuito_tiles.png){#fig:fig4 width="70%"}
+\"tiles\"](immagini/circuito_tiles.png)
 
 Nella figura 4 si può notare un componente che si chiama Random
 Generator. Esso è impostato per generare un numero pseudo-random su 4
@@ -134,7 +130,7 @@ otto colonne.
 Matrice LED 4x30 e la visualizzazione dei messaggi a fine partita
 -----------------------------------------------------------------
 
-![Matrice LED 4x30](immagini/matrice_led4x30.png){#fig:fig5 width="70%"}
+![Matrice LED 4x30](immagini/matrice_led4x30.png)
 
 Su questa matrice LED, pilotata dal componente \"DISPLAY\", si possono
 visualizzare i seguenti messaggi:
@@ -148,7 +144,7 @@ visualizzare i seguenti messaggi:
 ### Circuito per visualizzare i messaggi
 
 ![Circuito per la generazione dei
-messaggi](immagini/circuito_matriceLED4x30.png){#fig:fig6 width="115%"}
+messaggi](immagini/circuito_matriceLED4x30.png)
 
 La matrice LED 4x30 è indirizzata per colonna, perciò bisogna
 indirizzare 30 colonne. Ogni elemento nella figura 6 indirizza una sola
@@ -166,7 +162,7 @@ SEL a 2 bit, a seconda delle necessità:
 
 -   SEL = 11 Matrice LED spenta (il circuito è spento)
 
-l0.5 ![image](immagini/encoder.png){width="0.9\\linewidth"}
+l0.5 ![image](immagini/encoder.png)
 
 Il segnale di selezione viene ricevuto da un encoder (che si può vedere
 in figura 7). L'encoder manderà in uscita una sequenza su 2 bit in base
@@ -187,8 +183,7 @@ a quale linea è accesa al suo ingresso:
 Conteggio dei punti e degli errori
 ----------------------------------
 
-![Tre HEX digit display](immagini/hex_digit_display.png){#fig:fig8
-width="60%"}
+![Tre HEX digit display](immagini/hex_digit_display.png)
 
 In questa fase utilizziamo i tre HEX digit display (due per i punti, uno
 per gli errori)
@@ -196,11 +191,9 @@ per gli errori)
 ### Conteggio dei punti
 
 ![Due HEX digit display usati per visualizzare i
-punti](immagini/hex_digit_display_hit.png){#fig:subfig1
-width="1\\linewidth" height="5.5cm"}
+punti](immagini/hex_digit_display_hit.png)
 
-![Circuito che conta i punti](immagini/circuito_hit.png){#fig:subfig2
-width="1.05\\linewidth" height="5.5cm"}
+![Circuito che conta i punti](immagini/circuito_hit.png)
 
 Nella figura 9.b) si possono vedere 2 contatori su 4 bit messi in
 sequenza. Il primo (quello piu' a sinistra) conta fino a 9 e quando lo
@@ -223,12 +216,10 @@ presentato nella sezione 2.6.
 ### Conteggio degli errori
 
 ![Un HEX digit display usato per visualizzare gli
-errori](immagini/hex_digit_display_miss.png){#fig:subfig3
-width="1\\linewidth" height="5.5cm"}
+errori](immagini/hex_digit_display_miss.png)
 
 ![Circuito che conta gli
-errori](immagini/circuito_miss.png){#fig:subfig4 width="1.05\\linewidth"
-height="5.5cm"}
+errori](immagini/circuito_miss.png)
 
 Nella figura 10.b) si può vedere un contatore su 4 bit che è impostato a
 poter contare solo fino a 9. Il valore del contatore viene mandato fuori
@@ -243,12 +234,10 @@ Circuito di ON/OFF
 ------------------
 
 ![Bottone di accensione/spegnimento del
-circuito](immagini/on_off.png){#fig:subfig5 width="1\\linewidth"
-height="4.5cm"}
+circuito](immagini/on_off.png)
 
 ![Circuito di accensione/spegnimento del
-circuito](immagini/circuito_on_off.png){#fig:subfig6
-width="1.2\\linewidth" height="4.5cm"}
+circuito](immagini/circuito_on_off.png)
 
 Il circuito di accensione/spegnimento nella figura 11.b) è implementato
 da un contatore su 1 bit (e quindi che conta solo fino a 1). Quando
@@ -260,7 +249,7 @@ all'impostazione di wrap around) e cosi' via.
 Reset
 -----
 
-![Bottone per il RESET](immagini/reset.png){#fig:fig12 width="40%"}
+![Bottone per il RESET](immagini/reset.png)
 
 Il segnale di RESET fa tornare il gioco allo stato iniziale che si ha
 subito dopo l'accensione. Questo viene fatto azzerrando lo stato del
@@ -269,12 +258,10 @@ shift register e dei contatori.
 I 4 bottoni per il gameplay e l'interazione con lo stato del gioco
 ------------------------------------------------------------------
 
-![4 bottoni per il gameplay](immagini/bottoni.png){#fig:subfig7
-width="0.8\\linewidth" height="4.5cm"}
+![4 bottoni per il gameplay](immagini/bottoni.png)
 
 ![Bottoni come input nel circuito che calcola lo
-score](immagini/input_score.png){#fig:subfig8 width="1\\linewidth"
-height="4.5cm"}
+score](immagini/input_score.png)
 
 I 4 bottoni rappresentano 4 input per il circuito che calcola lo score.
 Inoltre in questo circuito entra anche la sequenza di 4 bit uscente
@@ -286,7 +273,7 @@ stato della macchina.
 ### Interazione degli input con lo stato del gioco
 
 ![Circuito che fa scattare i contatori dei punti e degli
-errori](immagini/SOP_POS_score.png){#fig:fig14 width="80%"}
+errori](immagini/SOP_POS_score.png)
 
 Nella figura 14 si possono vedere gli 8 input del nostro circuito (tra
 cui 4 arrivano dai bottoni per il gameplay e gli altri 4 arrivano
