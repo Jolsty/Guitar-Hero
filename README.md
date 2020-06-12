@@ -162,7 +162,7 @@ SEL a 2 bit, a seconda delle necessità:
 
 -   SEL = 11 Matrice LED spenta (il circuito è spento)
 
-l0.5 ![image](immagini/encoder.png)
+![Encoder](immagini/encoder.png)
 
 Il segnale di selezione viene ricevuto da un encoder (che si può vedere
 in figura 7). L'encoder manderà in uscita una sequenza su 2 bit in base
